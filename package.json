@@ -1,0 +1,18 @@
+{
+  "name": "structy",
+  "version": "1.0.0",
+  "description": "Solutions for Structy, an online course in data structures and algorithms.",
+  "repository": "https://github.com/lsukharev/structy.git",
+  "author": "Leo Sukharev <leosukharev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "jest": "^28.0.3",
+    "ts-jest": "^28.0.1",
+    "typescript": "^4.6.3"
+  }
+}
