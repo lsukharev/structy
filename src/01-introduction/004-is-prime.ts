@@ -13,9 +13,9 @@
  *
  * You can assume that the input number is a positive integer.
  *
- * n = input number
- * Time: O(square_root(n))
- * Space: O(1)
+ * - n = input number
+ * - Time: O(square_root(n))
+ * - Space: O(1)
  */
 
 export const isPrime = (num: number): boolean => {

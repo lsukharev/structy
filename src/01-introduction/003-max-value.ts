@@ -8,9 +8,9 @@
  *
  * You can assume that the array is non-empty.
  *
- * n = length of array
- * Time: O(n)
- * Space: O(1)
+ * - n = length of array
+ * - Time: O(n)
+ * - Space: O(1)
  */
 
 export const maxValue = (nums: number[]): number => {
