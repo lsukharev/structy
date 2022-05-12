@@ -1,4 +1,4 @@
-import { pairSum } from '../../src/02-array-and-string/010-pair-sum';
+import pairSum from '../../src/02-array-and-string/010-pair-sum';
 
 test('test_00', () => {
   expect(pairSum([3, 2, 5, 4, 1], 8)).toEqual([0, 2]);

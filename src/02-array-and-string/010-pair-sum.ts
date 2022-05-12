@@ -1,4 +1,6 @@
 /**
+ * pair sum
+ *
  * Write a function, pairSum, that takes in an array and a target sum as
  * arguments. The function should return an array containing a pair of indices
  * whose elements sum to the given target. The indices returned must be unique.
@@ -12,8 +14,8 @@
  * - Space: O(n)
  */
 
-export const pairSum = (numbers: number[], targetSum: number): number[] => {
-  const prevNums: { [elem: number]: number } = {};
+export default function pairSum(numbers: number[], targetSum: number): number[] {
+  const prevNums: { [key: number]: number } = {};
 
   for (let i = 0; i < numbers.length; i += 1) {
     const num = numbers[i];
