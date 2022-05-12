@@ -18,7 +18,7 @@
  * - Space: O(n)
  */
 
-export const compress = (str: string): string => {
+export default function compress(str: string): string {
   let result = '';
   let i = 0;
   let j = 0;
@@ -34,4 +34,4 @@ export const compress = (str: string): string => {
   }
 
   return result;
-};
+}

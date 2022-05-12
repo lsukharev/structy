@@ -28,4 +28,4 @@ export default function pairProduct (numbers: number[], targetProduct: number): 
 
     prevNums[num] = i;
   }
-};
+}

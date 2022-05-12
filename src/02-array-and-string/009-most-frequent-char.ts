@@ -12,7 +12,7 @@
  * - Space: O(n)
  */
 
-export const mostFrequentChar = (str: string): string => {
+export default function mostFrequentChar(str: string): string {
   const freq: { [key: string]: number } = {};
 
   for (let ch of str) {
@@ -25,4 +25,4 @@ export const mostFrequentChar = (str: string): string => {
 
   return Object.entries(freq)
     .reduce((prev, curr) => curr[1] > prev[1] ? curr : prev)[0];
-};
+}

@@ -18,7 +18,7 @@
  * - Space: O(1)
  */
 
-export const isPrime = (num: number): boolean => {
+export default function isPrime(num: number): boolean {
   if (num < 2) {
     return false;
   }
@@ -30,4 +30,4 @@ export const isPrime = (num: number): boolean => {
   }
 
   return true;
-};
+}

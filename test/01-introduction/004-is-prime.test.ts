@@ -1,4 +1,4 @@
-import { isPrime } from '../../src/01-introduction/004-is-prime';
+import isPrime from '../../src/01-introduction/004-is-prime';
 
 test('test_00', () => {
   expect(isPrime(2)).toBe(true);

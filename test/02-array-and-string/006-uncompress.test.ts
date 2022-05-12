@@ -1,4 +1,4 @@
-import { uncompress } from '../../src/02-array-and-string/006-uncompress';
+import uncompress from '../../src/02-array-and-string/006-uncompress';
 
 test('test_00', () => {
   expect(uncompress('2c3a1t')).toBe('ccaaat');

@@ -1,4 +1,4 @@
-import { compress } from '../../src/02-array-and-string/007-compress';
+import compress from '../../src/02-array-and-string/007-compress';
 
 test('test_00', () => {
   expect(compress('ccaaatsss')).toBe('2c3at3s');

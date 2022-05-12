@@ -1,4 +1,4 @@
-import { greet } from '../../src/01-introduction/002-hey-programmer';
+import greet from '../../src/01-introduction/002-hey-programmer';
 
 test('test_00', () => {
   expect(greet('alvin')).toBe('hey alvin');

@@ -20,7 +20,7 @@
  * - Space: O(n*m)
  */
 
-export const uncompress = (str: string): string => {
+export default function uncompress(str: string): string {
   let result = '';
   let i = 0;
   let j = 0;
@@ -39,4 +39,4 @@ export const uncompress = (str: string): string => {
   }
 
   return result;
-};
+}

@@ -8,6 +8,6 @@
  * the string "hey str". No tricks here. Run the tests to check your work.
  */
 
-export const greet = (str: string): string => {
+export default function greet(str: string): string {
   return 'hey ' + str;
-};
+}

@@ -1,4 +1,4 @@
-import { maxValue } from '../../src/01-introduction/003-max-value';
+import maxValue from '../../src/01-introduction/003-max-value';
 
 test('test_00', () => {
   expect(maxValue([4, 7, 2, 8, 10, 9])).toBe(10);

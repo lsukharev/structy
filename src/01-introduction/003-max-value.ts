@@ -13,7 +13,7 @@
  * - Space: O(1)
  */
 
-export const maxValue = (nums: number[]): number => {
+export default function maxValue(nums: number[]): number {
   let max = nums[0];
 
   for (let num of nums) {
@@ -23,4 +23,4 @@ export const maxValue = (nums: number[]): number => {
   }
 
   return max;
-};
+}

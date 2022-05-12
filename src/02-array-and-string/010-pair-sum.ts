@@ -27,4 +27,4 @@ export default function pairSum(numbers: number[], targetSum: number): number[] 
 
     prevNums[num] = i;
   }
-};
+}

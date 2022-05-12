@@ -12,7 +12,7 @@
  * - Space: O(n)
  */
 
-export const anagrams = (str1: string, str2: string): boolean => {
+export default function anagrams(str1: string, str2: string): boolean {
   if (str1.length !== str2.length) {
     return false;
   }
@@ -36,4 +36,4 @@ export const anagrams = (str1: string, str2: string): boolean => {
   }
 
   return Object.values(freq).every(count => count === 0);
-};
+}

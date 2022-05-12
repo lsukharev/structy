@@ -1,4 +1,4 @@
-import { mostFrequentChar } from '../../src/02-array-and-string/009-most-frequent-char';
+import mostFrequentChar from '../../src/02-array-and-string/009-most-frequent-char';
 
 test('test_00', () => {
   expect(mostFrequentChar('bookeeper')).toBe('e');

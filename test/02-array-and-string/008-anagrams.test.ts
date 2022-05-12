@@ -1,4 +1,4 @@
-import { anagrams } from '../../src/02-array-and-string/008-anagrams';
+import anagrams from '../../src/02-array-and-string/008-anagrams';
 
 test('test_00', () => {
   expect(anagrams('restful', 'fluster')).toBe(true);
