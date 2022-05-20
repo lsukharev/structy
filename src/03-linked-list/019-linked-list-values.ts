@@ -14,7 +14,6 @@ import Node from './Node';
  * - Time: O(n)
  * - Space: O(n)
  */
-
 export function linkedListValues(head: Node<any>): any[] {
   const data = [];
   let curr = head;
@@ -38,7 +37,6 @@ export function linkedListValues(head: Node<any>): any[] {
  * - Time: O(n)
  * - Space: O(n)
  */
-
 export function linkedListValuesRecursive(head: Node<any>): any[] {
   const data: any[] = [];
   _linkedListValuesRecursive(head, data);
