@@ -19,11 +19,11 @@ describe('test_00', () => {
   // 2 -> 8 -> 3 -> -1 -> 7
 
   test('iterative', () => {
-    expect(sumList(a)).toEqual(19);
+    expect(sumList(a)).toBe(19);
   });
 
   test('recursive', () => {
-    expect(sumListRecursive(a)).toEqual(19);
+    expect(sumListRecursive(a)).toBe(19);
   });
 });
 
@@ -36,11 +36,11 @@ describe('test_01', () => {
   // 38 -> 4
 
   test('iterative', () => {
-    expect(sumList(x)).toEqual(42);
+    expect(sumList(x)).toBe(42);
   });
 
   test('recursive', () => {
-    expect(sumListRecursive(x)).toEqual(42);
+    expect(sumListRecursive(x)).toBe(42);
   });
 });
 
@@ -50,20 +50,20 @@ describe('test_02', () => {
   // 100
 
   test('iterative', () => {
-    expect(sumList(z)).toEqual(100);
+    expect(sumList(z)).toBe(100);
   });
 
   test('recursive', () => {
-    expect(sumListRecursive(z)).toEqual(100);
+    expect(sumListRecursive(z)).toBe(100);
   });
 });
 
 describe('test_03', () => {
   test('iterative', () => {
-    expect(sumList(null)).toEqual(0);
+    expect(sumList(null)).toBe(0);
   });
 
   test('recursive', () => {
-    expect(sumListRecursive(null)).toEqual(0);
+    expect(sumListRecursive(null)).toBe(0);
   });
 });
