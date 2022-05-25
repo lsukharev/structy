@@ -6,4 +6,8 @@ export default class Node<T> {
     this.data = data;
     this.next = null;
   }
+
+  toString(): string {
+    return this.data + (this.next ? ` -> ${this.next}` : '');
+  }
 }
