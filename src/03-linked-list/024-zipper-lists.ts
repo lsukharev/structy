@@ -37,12 +37,12 @@ export function zipperLists(head1: Node<any>, head2: Node<any>): Node<any> {
     iter += 1;
   }
 
-  if (curr1 === null) {
-    tail.next = curr2;
+  if (curr1 !== null) {
+    tail.next = curr1;
   }
 
-  if (curr2 === null) {
-    tail.next = curr1;
+  if (curr2 !== null) {
+    tail.next = curr2;
   }
 
   return head1;
