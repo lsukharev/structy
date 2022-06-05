@@ -13,10 +13,10 @@ import Node from './Node';
  * You may assume that both input lists are non-empty and contain increasing
  * sorted numbers.
  *
- * n = length of list 1
- * m = length of list 2
- * Time: O(min(n, m))
- * Space: O(1)
+ * - n = length of list 1
+ * - m = length of list 2
+ * - Time: O(min(n, m))
+ * - Space: O(1)
  */
 export function mergeLists(head1: Node<number>, head2: Node<number>): Node<number> {
   let curr1 = head1;
@@ -60,10 +60,10 @@ export function mergeLists(head1: Node<number>, head2: Node<number>): Node<numbe
  * You may assume that both input lists are non-empty and contain increasing
  * sorted numbers.
  *
- * n = length of list 1
- * m = length of list 2
- * Time: O(min(n, m))
- * Space: O(min(n, m))
+ * - n = length of list 1
+ * - m = length of list 2
+ * - Time: O(min(n, m))
+ * - Space: O(min(n, m))
  */
 export function mergeListsRecursive(head1: Node<number>, head2: Node<number>): Node<number> {
   if (head1 === null && head2 === null) {
