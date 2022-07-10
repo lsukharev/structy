@@ -17,8 +17,8 @@ test('test_03', () => {
 });
 
 test('test_04', () => {
-  const a = [];
-  const b = [];
+  const a: number[] = [];
+  const b: number[] = [];
 
   for (let i = 0; i < 50000; i += 1) {
     a.push(i);

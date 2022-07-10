@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import breadthFirstValues from '../../src/04-binary-tree/038-breadth-first-values';
+import Node from '../../src/04-binary-tree/Node';
 
 test('test_00', () => {
   const a = new Node('a');

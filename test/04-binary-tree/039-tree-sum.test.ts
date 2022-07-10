@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { treeSum, treeSumRecursive } from '../../src/04-binary-tree/039-tree-sum';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node(3);

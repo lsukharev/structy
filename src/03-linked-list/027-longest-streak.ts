@@ -11,7 +11,7 @@ import Node from './Node';
  * - Time: O(n)
  * - Space: O(1)
  */
-export default function longestStreak(head: Node<any>): number {
+export default function longestStreak(head: Node<any> | null): number {
   let curr = head;
   let prev = new Node(null);
   let currStreak = 0;

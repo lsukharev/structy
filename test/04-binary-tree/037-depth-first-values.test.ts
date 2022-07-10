@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { depthFirstValues, depthFirstValuesRecursive } from '../../src/04-binary-tree/037-depth-first-values';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node('a');

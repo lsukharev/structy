@@ -15,7 +15,7 @@ import Node from './Node';
  * JavaScript shift() methods runs in O(n). JavaScript does not have a native
  * queue data structure that is maximally efficient.
  */
-export default function breadthFirstValues(root: Node<any>): any[] {
+export default function breadthFirstValues(root: Node<any> | null): any[] {
   if (root === null) {
     return [];
   }

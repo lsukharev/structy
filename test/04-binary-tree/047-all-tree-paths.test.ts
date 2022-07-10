@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import allTreePaths from '../../src/04-binary-tree/047-all-tree-paths';
+import Node from '../../src/04-binary-tree/Node';
 
 test('test_00', () => {
   const a = new Node('a');

@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { treeIncludes, treeIncludesRecursive } from '../../src/04-binary-tree/040-tree-includes';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node('a');

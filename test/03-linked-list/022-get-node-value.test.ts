@@ -1,8 +1,5 @@
+import { getNodeValue, getNodeValueRecursive } from '../../src/03-linked-list/022-get-node-value';
 import Node from '../../src/03-linked-list/Node';
-import {
-  getNodeValue,
-  getNodeValueRecursive
-} from '../../src/03-linked-list/022-get-node-value';
 
 describe('test_00', () => {
   const a = new Node('a');

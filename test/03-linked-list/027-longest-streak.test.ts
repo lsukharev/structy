@@ -1,5 +1,5 @@
-import Node from '../../src/03-linked-list/Node';
 import longestStreak from '../../src/03-linked-list/027-longest-streak';
+import Node from '../../src/03-linked-list/Node';
 
 test('test_00', () => {
   const a = new Node(5);

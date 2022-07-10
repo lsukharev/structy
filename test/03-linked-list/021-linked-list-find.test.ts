@@ -1,8 +1,5 @@
+import { linkedListFind, linkedListFindRecursive } from '../../src/03-linked-list/021-linked-list-find';
 import Node from '../../src/03-linked-list/Node';
-import {
-  linkedListFind,
-  linkedListFindRecursive
-} from '../../src/03-linked-list/021-linked-list-find';
 
 describe('test_00', () => {
   const a = new Node('a');

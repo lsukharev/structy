@@ -1,5 +1,5 @@
-import Node from '../../src/03-linked-list/Node';
 import { addLists, addListsRecursive } from '../../src/03-linked-list/031-add-lists';
+import Node from '../../src/03-linked-list/Node';
 
 describe('test_00', () => {
   //   621

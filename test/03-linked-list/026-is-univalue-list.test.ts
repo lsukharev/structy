@@ -1,8 +1,5 @@
+import { isUnivalueList, isUnivalueListRecursive } from '../../src/03-linked-list/026-is-univalue-list';
 import Node from '../../src/03-linked-list/Node';
-import {
-  isUnivalueList,
-  isUnivalueListRecursive
-} from '../../src/03-linked-list/026-is-univalue-list';
 
 describe('test_00', () => {
   const a = new Node(7);

@@ -1,8 +1,5 @@
+import { insertNode, insertNodeRecursive } from '../../src/03-linked-list/029-insert-node';
 import Node from '../../src/03-linked-list/Node';
-import {
-  insertNode,
-  insertNodeRecursive
-} from '../../src/03-linked-list/029-insert-node';
 
 describe('test_00', () => {
   let a: Node<string>;

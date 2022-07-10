@@ -11,7 +11,7 @@ import Node from './Node';
  * - Time: O(n)
  * - Space: O(n)
  */
-export function treeIncludes<T>(root: Node<any>, target: T): boolean {
+export function treeIncludes<T>(root: Node<any> | null, target: T): boolean {
   if (root === null) {
     return false;
   }
@@ -48,7 +48,7 @@ export function treeIncludes<T>(root: Node<any>, target: T): boolean {
  * - Time: O(n)
  * - Space: O(n)
  */
-export function treeIncludesRecursive<T>(root: Node<any>, target: T): boolean {
+export function treeIncludesRecursive<T>(root: Node<any> | null, target: T): boolean {
   if (root === null) {
     return false;
   }

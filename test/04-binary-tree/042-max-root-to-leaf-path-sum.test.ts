@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import maxPathSum from '../../src/04-binary-tree/042-max-root-to-leaf-path-sum';
+import Node from '../../src/04-binary-tree/Node';
 
 test('test_00', () => {
   const a = new Node(3);

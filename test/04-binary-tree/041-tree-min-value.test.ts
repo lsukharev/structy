@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { treeMinValue, treeMinValueRecursive } from '../../src/04-binary-tree/041-tree-min-value';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node(3);

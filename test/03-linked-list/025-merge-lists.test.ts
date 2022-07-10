@@ -1,8 +1,5 @@
+import { mergeLists, mergeListsRecursive } from '../../src/03-linked-list/025-merge-lists';
 import Node from '../../src/03-linked-list/Node';
-import {
-  mergeLists,
-  mergeListsRecursive
-} from '../../src/03-linked-list/025-merge-lists';
 
 describe('test_00', () => {
   let a: Node<number>;

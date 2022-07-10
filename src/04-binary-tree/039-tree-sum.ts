@@ -11,7 +11,7 @@ import Node from './Node';
  * - Time: O(n)
  * - Space: O(n)
  */
-export function treeSum(root: Node<number>): number {
+export function treeSum(root: Node<number> | null): number {
   if (root === null) {
     return 0;
   }
@@ -46,7 +46,7 @@ export function treeSum(root: Node<number>): number {
  * - Time: O(n)
  * - Space: O(n)
  */
-export function treeSumRecursive(root: Node<number>): number {
+export function treeSumRecursive(root: Node<number> | null): number {
   if (root === null) {
     return 0;
   }

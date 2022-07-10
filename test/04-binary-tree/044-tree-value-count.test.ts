@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { treeValueCount, treeValueCountRecursive } from '../../src/04-binary-tree/044-tree-value-count';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node(12);

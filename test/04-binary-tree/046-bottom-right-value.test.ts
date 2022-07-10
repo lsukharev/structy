@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import bottomRightValue from '../../src/04-binary-tree/046-bottom-right-value';
+import Node from '../../src/04-binary-tree/Node';
 
 test('test_00', () => {
   const a = new Node(3);

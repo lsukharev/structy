@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { levelAverages, levelAveragesRecursive } from '../../src/04-binary-tree/049-level-averages';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node(3);

@@ -1,8 +1,5 @@
+import { linkedListValues, linkedListValuesRecursive } from '../../src/03-linked-list/019-linked-list-values';
 import Node from '../../src/03-linked-list/Node';
-import {
-  linkedListValues,
-  linkedListValuesRecursive
-} from '../../src/03-linked-list/019-linked-list-values';
 
 describe('test_00', () => {
   const a = new Node('a');

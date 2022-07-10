@@ -1,8 +1,5 @@
+import { sumList, sumListRecursive } from '../../src/03-linked-list/020-sum-list';
 import Node from '../../src/03-linked-list/Node';
-import {
-  sumList,
-  sumListRecursive
-} from '../../src/03-linked-list/020-sum-list';
 
 describe('test_00', () => {
   const a = new Node(2);

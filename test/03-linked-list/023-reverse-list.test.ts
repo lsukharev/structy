@@ -1,8 +1,5 @@
+import { reverseList, reverseListRecursive } from '../../src/03-linked-list/023-reverse-list';
 import Node from '../../src/03-linked-list/Node';
-import {
-  reverseList,
-  reverseListRecursive
-} from '../../src/03-linked-list/023-reverse-list';
 
 describe('test_00', () => {
   let a: Node<string>;

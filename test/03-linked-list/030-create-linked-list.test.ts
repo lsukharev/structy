@@ -1,7 +1,4 @@
-import {
-  createLinkedList,
-  createLinkedListRecursive
-} from '../../src/03-linked-list/030-create-linked-list';
+import { createLinkedList, createLinkedListRecursive } from '../../src/03-linked-list/030-create-linked-list';
 
 describe('test_00', () => {
   test('iterative', () => {

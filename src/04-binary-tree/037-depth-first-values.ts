@@ -14,7 +14,7 @@ import Node from './Node';
  * - Time: O(n)
  * - Space: O(n)
  */
-export function depthFirstValues(root: Node<any>): any[] {
+export function depthFirstValues(root: Node<any> | null): any[] {
   if (root === null) {
     return [];
   }
@@ -52,7 +52,7 @@ export function depthFirstValues(root: Node<any>): any[] {
  * - Time: O(n)
  * - Space: O(n)
  */
-export function depthFirstValuesRecursive(root: Node<any>): any[] {
+export function depthFirstValuesRecursive(root: Node<any> | null): any[] {
   if (root === null) {
     return [];
   }

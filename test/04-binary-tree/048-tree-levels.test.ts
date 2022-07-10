@@ -1,5 +1,5 @@
-import Node from '../../src/04-binary-tree/Node';
 import { treeLevels, treeLevelsRecursive } from '../../src/04-binary-tree/048-tree-levels';
+import Node from '../../src/04-binary-tree/Node';
 
 describe('test_00', () => {
   const a = new Node('a');

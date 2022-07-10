@@ -1,8 +1,5 @@
+import { removeNode, removeNodeRecursive } from '../../src/03-linked-list/028-remove-node';
 import Node from '../../src/03-linked-list/Node';
-import {
-  removeNode,
-  removeNodeRecursive
-} from '../../src/03-linked-list/028-remove-node';
 
 describe('test_00', () => {
   let a: Node<string>;

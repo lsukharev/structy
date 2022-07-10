@@ -1,8 +1,5 @@
+import { zipperLists, zipperListsRecursive } from '../../src/03-linked-list/024-zipper-lists';
 import Node from '../../src/03-linked-list/Node';
-import {
-  zipperLists,
-  zipperListsRecursive
-} from '../../src/03-linked-list/024-zipper-lists';
 
 describe('test_00', () => {
   let a: Node<string>;
