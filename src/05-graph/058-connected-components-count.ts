@@ -1,4 +1,4 @@
-import { AdjacencyList } from "./common";
+import { AdjacencyList } from './common';
 
 /**
  * connected components count
