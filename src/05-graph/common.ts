@@ -1,23 +1,23 @@
-export interface AdjacencyList {
-  [node: string]: string[];
+export interface AdjacencyList<T> {
+  [key: string]: T[];
 }
 
-export function buildGraph(edges: string[][]): AdjacencyList {
-  const graph: AdjacencyList = {};
+export function buildGraph<T>(edges: [T, T][]): AdjacencyList<T> {
+  const graph: AdjacencyList<T> = {};
 
   for (let edge of edges) {
     const [nodeA, nodeB] = edge;
 
     if (nodeA in graph) {
-      graph[nodeA].push(nodeB);
+      graph[nodeA.toString()].push(nodeB);
     } else {
-      graph[nodeA] = [nodeB];
+      graph[nodeA.toString()] = [nodeB];
     }
 
     if (nodeB in graph) {
-      graph[nodeB].push(nodeA);
+      graph[nodeB.toString()].push(nodeA);
     } else {
-      graph[nodeB] = [nodeA];
+      graph[nodeB.toString()] = [nodeA];
     }
   }
 

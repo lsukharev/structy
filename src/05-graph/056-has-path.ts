@@ -16,7 +16,7 @@ import { AdjacencyList } from './common';
  * - Time: O(e)
  * - Space: O(n)
  */
-export function hasPath(graph: AdjacencyList, source: string, destination: string): boolean {
+export function hasPath<T>(graph: AdjacencyList<T>, source: T, destination: T): boolean {
   const stack = [source];
 
   while (stack.length > 0) {
@@ -26,7 +26,7 @@ export function hasPath(graph: AdjacencyList, source: string, destination: strin
       return true;
     }
 
-    for (let neighbor of graph[current]) {
+    for (let neighbor of graph[current.toString()]) {
       stack.push(neighbor);
     }
   }
@@ -50,12 +50,12 @@ export function hasPath(graph: AdjacencyList, source: string, destination: strin
  * - Time: O(e)
  * - Space: O(n)
  */
-export function hasPathRecursive(graph: AdjacencyList, source: string, destination: string): boolean {
+export function hasPathRecursive<T>(graph: AdjacencyList<T>, source: T, destination: T): boolean {
   if (source === destination) {
     return true;
   }
 
-  for (let neighbor of graph[source]) {
+  for (let neighbor of graph[source.toString()]) {
     if (hasPathRecursive(graph, neighbor, destination) === true) {
       return true;
     }

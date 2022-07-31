@@ -2,7 +2,7 @@ import { hasPath, hasPathRecursive } from '../../src/05-graph/056-has-path';
 import { AdjacencyList } from '../../src/05-graph/common';
 
 describe('test_00', () => {
-  const graph: AdjacencyList = {
+  const graph: AdjacencyList<string> = {
     f: ['g', 'i'],
     g: ['h'],
     h: [],
@@ -23,7 +23,7 @@ describe('test_00', () => {
 });
 
 describe('test_01', () => {
-  const graph: AdjacencyList = {
+  const graph: AdjacencyList<string> = {
     f: ['g', 'i'],
     g: ['h'],
     h: [],
@@ -44,7 +44,7 @@ describe('test_01', () => {
 });
 
 describe('test_02', () => {
-  const graph: AdjacencyList = {
+  const graph: AdjacencyList<string> = {
     f: ['g', 'i'],
     g: ['h'],
     h: [],
@@ -65,7 +65,7 @@ describe('test_02', () => {
 });
 
 describe('test_03', () => {
-  const graph: AdjacencyList = {
+  const graph: AdjacencyList<string> = {
     v: ['x', 'w'],
     w: [],
     x: [],
@@ -85,7 +85,7 @@ describe('test_03', () => {
 });
 
 describe('test_04', () => {
-  const graph: AdjacencyList = {
+  const graph: AdjacencyList<string> = {
     v: ['x', 'w'],
     w: [],
     x: [],

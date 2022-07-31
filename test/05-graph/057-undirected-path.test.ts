@@ -1,7 +1,7 @@
 import { undirectedPath, undirectedPathRecursive } from '../../src/05-graph/057-undirected-path';
 
 describe('test_00', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['i', 'j'],
     ['k', 'i'],
     ['m', 'k'],
@@ -21,7 +21,7 @@ describe('test_00', () => {
 });
 
 describe('test_01', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['i', 'j'],
     ['k', 'i'],
     ['m', 'k'],
@@ -41,7 +41,7 @@ describe('test_01', () => {
 });
 
 describe('test_02', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['i', 'j'],
     ['k', 'i'],
     ['m', 'k'],
@@ -61,7 +61,7 @@ describe('test_02', () => {
 });
 
 describe('test_03', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['i', 'j'],
     ['k', 'i'],
     ['m', 'k'],
@@ -81,7 +81,7 @@ describe('test_03', () => {
 });
 
 describe('test_04', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['i', 'j'],
     ['k', 'i'],
     ['m', 'k'],
@@ -101,7 +101,7 @@ describe('test_04', () => {
 });
 
 describe('test_05', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['b', 'a'],
     ['c', 'a'],
     ['b', 'c'],
@@ -123,7 +123,7 @@ describe('test_05', () => {
 });
 
 describe('test_06', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['b', 'a'],
     ['c', 'a'],
     ['b', 'c'],
@@ -145,7 +145,7 @@ describe('test_06', () => {
 });
 
 describe('test_07', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['b', 'a'],
     ['c', 'a'],
     ['b', 'c'],
@@ -167,7 +167,7 @@ describe('test_07', () => {
 });
 
 describe('test_08', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['b', 'a'],
     ['c', 'a'],
     ['b', 'c'],
@@ -189,7 +189,7 @@ describe('test_08', () => {
 });
 
 describe('test_09', () => {
-  const edges = [
+  const edges: [string, string][] = [
     ['s', 'r'],
     ['t', 'q'],
     ['q', 'r']

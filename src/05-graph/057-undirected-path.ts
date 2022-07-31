@@ -13,25 +13,25 @@ import { AdjacencyList, buildGraph } from './common';
  * - Time: O(e)
  * - Space: O(n)
  */
-export function undirectedPath(edges: string[][], nodeA: string, nodeB: string): boolean {
+export function undirectedPath<T>(edges: [T, T][], nodeA: T, nodeB: T): boolean {
   const graph = buildGraph(edges);
-  return hasUndirectedPath(graph, nodeA, nodeB);
+  return hasUndirectedPath<T>(graph, nodeA, nodeB);
 }
 
-function hasUndirectedPath(graph: AdjacencyList, source: string, destination: string): boolean {
+function hasUndirectedPath<T>(graph: AdjacencyList<T>, source: T, destination: T): boolean {
   const stack = [source];
   const visited = new Set<string>();
 
   while (stack.length > 0) {
     const current = stack.pop();
-    visited.add(current);
+    visited.add(current.toString());
 
     if (current === destination) {
       return true;
     }
 
-    for (let neighbor of graph[current]) {
-      if (visited.has(neighbor)) {
+    for (let neighbor of graph[current.toString()]) {
+      if (visited.has(neighbor.toString())) {
         continue;
       }
 
@@ -55,20 +55,20 @@ function hasUndirectedPath(graph: AdjacencyList, source: string, destination: st
  * - Time: O(e)
  * - Space: O(n)
  */
-export function undirectedPathRecursive(edges: string[][], nodeA: string, nodeB: string): boolean {
+export function undirectedPathRecursive<T>(edges: [T, T][], nodeA: T, nodeB: T): boolean {
   const graph = buildGraph(edges);
-  return hasUndirectedPathRecursive(graph, nodeA, nodeB, new Set<string>());
+  return hasUndirectedPathRecursive<T>(graph, nodeA, nodeB, new Set<string>());
 }
 
-function hasUndirectedPathRecursive(graph: AdjacencyList, source: string, destination: string, visited: Set<string>): boolean {
+function hasUndirectedPathRecursive<T>(graph: AdjacencyList<T>, source: T, destination: T, visited: Set<string>): boolean {
   if (source === destination) {
     return true;
   }
 
-  visited.add(source);
+  visited.add(source.toString());
 
-  for (let neighbor of graph[source]) {
-    if (visited.has(neighbor)) {
+  for (let neighbor of graph[source.toString()]) {
+    if (visited.has(neighbor.toString())) {
       continue;
     }
 
