@@ -16,7 +16,7 @@ export default function hasCycle<T>(graph: AdjacencyList<T>): boolean {
   const visited = new Set<string>();
 
   for (let node in graph) {
-    if (detectCycle(graph, node, new Set<string>(), visited) === true) {
+    if (detectCycle(graph, node, new Set<string>(), visited)) {
       return true;
     }
   }
@@ -36,7 +36,7 @@ function detectCycle<T>(graph: AdjacencyList<T>, node: string, visiting: Set<str
   visiting.add(node);
 
   for (let neighbor of graph[node]) {
-    if (detectCycle(graph, neighbor.toString(), visiting, visited) === true) {
+    if (detectCycle(graph, neighbor.toString(), visiting, visited)) {
       return true;
     }
   }
