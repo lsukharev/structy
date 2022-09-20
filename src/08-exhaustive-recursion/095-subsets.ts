@@ -19,8 +19,8 @@ export default function subsets(elements: string[]): string[][] {
     return [[]];
   }
 
-  const elem = elements.shift();
-  const subsetsWithoutElem = subsets(elements);
+  const elem = elements[0];
+  const subsetsWithoutElem = subsets(elements.slice(1));
   const subsetsWithElem = [];
 
   for (const subset of subsetsWithoutElem) {

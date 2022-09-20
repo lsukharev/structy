@@ -18,10 +18,10 @@ export default function permutations<T>(elements: T[]): T[][] {
     return [[]];
   }
 
-  const elem = elements.shift();
+  const elem = elements[0];
   const result: T[][] = [];
 
-  for (const permuation of permutations(elements)) {
+  for (const permuation of permutations(elements.slice(1))) {
     for (let index = 0; index <= permuation.length; index += 1) {
       result.push([...permuation.slice(0, index), elem, ...permuation.slice(index)]);
     }
