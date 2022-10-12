@@ -18,7 +18,7 @@ test('test_00', () => {
   c.right = f;
   e.left = g;
   e.right = h;
-  
+
   //       a
   //     /   \
   //    b     c
@@ -63,13 +63,13 @@ test('test_01', () => {
   const r = new Node('r');
   const q = new Node('q');
   const p = new Node('p');
-  
+
   u.left = t;
   u.right = s;
   s.right = r;
   r.left = q;
   r.right = p;
-  
+
   //     u
   //   /   \
   //  t     s
@@ -113,7 +113,7 @@ test('test_02', () => {
   const r = new Node('r');
   const s = new Node('s');
   const t = new Node('t');
-  
+
   l.left = m;
   l.right = n;
   n.left = o;
@@ -122,7 +122,7 @@ test('test_02', () => {
   o.right = r;
   p.left = s;
   p.right = t;
-  
+
   //     l
   //   /   \
   //  m     n
@@ -166,10 +166,10 @@ test('test_03', () => {
   const n = new Node('n');
   const y = new Node('y');
   const c = new Node('c');
-  
+
   n.left = y;
   n.right = c;
-  
+
   //     n
   //   /   \
   //  y     c
