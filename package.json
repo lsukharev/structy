@@ -4,7 +4,6 @@
   "description": "Solutions for Structy, an online course in data structures and algorithms.",
   "repository": "https://github.com/lsukharev/structy.git",
   "author": "Leo Sukharev <leosukharev@gmail.com>",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "rm -rf dist/ && tsc",
